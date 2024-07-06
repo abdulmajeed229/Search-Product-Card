@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <style>
+        #main{
+
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+           justify-content: center;
+        }
+        #card{
+            height: 460px;
+            width: 300px;
+            margin-top: 20px;
+            /* text-align: center; */
+            cursor: pointer;
+            padding: 10px;
+            border: 1px solid rgb(199, 193, 193);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+        }
+        #card:hover{
+
+            transition: 0.4s;
+            transform: scale(1.05);
+        }
+        img{
+
+
+            height: 160px;
+            width: 100%;
+        }
+        nav{
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: sticky;
+            background-color: white;
+            top: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        select{
+            height: 30px;
+            width: 190px;
+            outline: none;
+        }
+        #btnnn{
+            height: 35px;
+            width: 130px;
+            border: 1px solid rgb(209, 206, 206);
+            cursor: pointer;
+        }
+        #btnnn:hover{
+            background-color: rgb(57, 128, 196);
+            color: white;
+            transition: 1s;
+        }.hjl{
+           font-size: 40px; 
+        }
+
+    </style>
+
+    <nav>
+
+        <h1 class="hjl">JavasScrpit Task</h1>
+
+        <select id="choose">
+
+            <option value="all">All</option>
+            <option value="Car">Car</option>
+            <option value="Boat">Boat</option>
+            <option value="Cycle">Cycle</option>
+            <option value="Bus">Bus</option>
+            <option value="Mobile">Mobile</option>
+            <option value="Robot">Robot</option>
+            <option value="Helicopter">Helicopter</option>
+            <option value="Jet">Jet</option>
+            <option value="Plane">Plane</option>
+            <option value="Bike">Bike</option>
+            <option value="Rifle">Rifle</option>
+        </select>
+
+    </nav>
+
+    <div id="main">
+
+    </div>
+    
+
+    <script src="scrpit.js"></script>
+</body>
+</html>
+
