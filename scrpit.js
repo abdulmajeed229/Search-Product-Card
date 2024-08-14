@@ -303,4 +303,27 @@ opt.addEventListener('change', () => {
 })
 
 
+let userSerch = document.querySelector('#search');
+
+let card = document.querySelectorAll('#card');
+
+
+userSerch.addEventListener('input' , function(){
+
+    
+    for(let i = 0 ; i < card.length ; i++){
+        
+        if(card[i].textContent.toLowerCase().includes(userSerch.value.toLowerCase())){
+            
+            
+            card[i].style.display = 'block'
+            
+        }else{
+            
+            card[i].style.display = 'none'
+        }
+    }
+});
+
+
 
